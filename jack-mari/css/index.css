@@ -133,6 +133,8 @@ h1 {
     font-weight: 400;
     font-style: normal;
     white-space: nowrap;
+    line-height: 1em;
+    margin-bottom: 0.5em;
 }
 
 header .date {
@@ -150,11 +152,11 @@ header .message {
 .icon {
     width: 1em;
     height: 1em;
-        vertical-align: text-top;
-        display: inline-block;
-        margin-right: 0.4em;
-        background-size: contain;
-        background-position: center;
+    vertical-align: text-top;
+    display: inline-block;
+    margin-right: 0.4em;
+    background-size: contain;
+    background-position: center;
 }
 .icon-calendar {
     background-image: url('../assets/calendar.png')
@@ -164,4 +166,76 @@ header .message {
 }
 .icon-message {
     background-image: url('../assets/chat_love_1.png')
+}
+
+.couple-photo {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0 auto;
+    border: 2px solid #3498db;
+}
+
+#carousel-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-content .btn-close {
+    margin: 20px auto 0;
+    display: block;
 }
