@@ -29,8 +29,7 @@ function showPix({giftName, value, qrCodeImageUrl, textCopyPaste }) {
     document.querySelector('#pix-modal').style.display = 'flex';
     document.querySelector('#qrcode-pix').src = qrCodeImageUrl;
     document.querySelector('#span-copy-pix').innerText = textCopyPaste;
-    //document.querySelector('.btn-pay-pix').href = 'pix:' + textCopyPaste;
-    document.querySelector('.btn-pay-pix').href = 'payto://pix/jack.mello.cursos@gmail.com?amount=BRL:' + value;
+    document.querySelector('.btn-pay-pix').href = 'pix://jack.mello.cursos@gmail.com?amount=' + value + '&description=' + giftName;
 };
 
 function closePix() {
