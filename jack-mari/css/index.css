@@ -250,6 +250,7 @@ header .message {
     background-color: rgba(0,0,0,0.5);
     align-items: center;
     justify-content: center;
+    flex-flow: column;
 }
 
 .confirm-invite-modal-content {
@@ -259,5 +260,10 @@ header .message {
     max-width: 90%;
     position: relative;
     display: inherit;
-    flex-direction: column;
+    padding-bottom: 5em;
+}
+
+.confirm-invite-modal-close {
+    top: -3.5em;
+    position: relative;
 }
