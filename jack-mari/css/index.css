@@ -157,11 +157,11 @@ header .message {
         background-position: center;
 }
 .icon-calendar {
-    background-image: url('assets/calendar.png')
+    background-image: url('../assets/calendar.png')
 }
 .icon-location {
-    background-image: url('assets/location.png')
+    background-image: url('../assets/location.png')
 }
 .icon-message {
-    background-image: url('assets/chat_love_1.png')
+    background-image: url('../assets/chat_love_1.png')
 }
