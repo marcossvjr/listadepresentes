@@ -9,6 +9,7 @@
     </head>
     <body>
         <header>
+            <img src="photos/perfil.jpg" alt="Foto do casal" class="couple-photo" onclick="showCarousel()">
             <h1>Jack & Mari</h1>
             <p class="date"><span class="icon icon-calendar"></span>12/07/2025 - (horário em breve)</p>
             <p class="local"><span class="icon icon-location"></span><a href="https://maps.app.goo.gl/py6eao27MMyXfYDv6" target="_blank">Garden Party</a></p>
@@ -34,6 +35,29 @@
                     <button class="btn btn-copy-pix" onclick="copyPix()">Copiar</button>
                 </p>
                 <button class="btn btn-close-modal" onclick="closePix()">Fechar</button>
+            </div>
+        </div>
+
+        <div id="carousel-modal">
+            <div class="carousel-content">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="photos/1.jpg" alt="Foto 1" />
+                        <img src="photos/2.jpg" alt="Foto 2" />
+                        <img src="photos/3.jpg" alt="Foto 3" />
+                        <img src="photos/4.jpg" alt="Foto 4" />
+                        <img src="photos/5.jpg" alt="Foto 5" />
+                        <img src="photos/6.jpg" alt="Foto 6" />
+                        <img src="photos/7.jpg" alt="Foto 7" />
+                        <img src="photos/8.jpg" alt="Foto 8" />
+                        <img src="photos/9.jpg" alt="Foto 9" />
+                        <img src="photos/10.jpg" alt="Foto 10" />
+                        <img src="photos/11.jpg" alt="Foto 11" />
+                    </div>
+                    <button class="carousel-btn prev-btn" onclick="prevSlide()">◄</button>
+                    <button class="carousel-btn next-btn" onclick="nextSlide()">►</button>
+                </div>
+                <button class="btn btn-close" onclick="closeCarousel()">Fechar</button>
             </div>
         </div>
 
