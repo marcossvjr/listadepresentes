@@ -259,4 +259,5 @@ header .message {
     max-width: 90%;
     position: relative;
     display: inherit;
+    flex-direction: column;
 }
