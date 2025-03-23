@@ -194,7 +194,7 @@ header .message {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    max-width: 600px;
+    max-width: 90%;
     position: relative;
 }
 
@@ -238,4 +238,25 @@ header .message {
 .carousel-content .btn-close {
     margin: 20px auto 0;
     display: block;
+}
+
+#confirm-invite-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm-invite-modal-content {
+    background-color: #fff;
+    padding: 1.2em;
+    border-radius: 8px;
+    max-width: 90%;
+    position: relative;
+    display: inherit;
 }
