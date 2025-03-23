@@ -96,12 +96,21 @@ const slides = document.querySelectorAll('.carousel-images img');
 const totalSlides = slides.length;
 
 function showCarousel() {
-    document.getElementById('carousel-modal').style.display = 'flex';
+    document.querySelector('#carousel-modal').style.display = 'flex';
     updateCarousel();
 };
 
 function closeCarousel() {
-    document.getElementById('carousel-modal').style.display = 'none';
+    document.querySelector('#carousel-modal').style.display = 'none';
+};
+
+function showConfirmInvite() {
+    document.querySelector('#confirm-invite-modal').style.display = 'flex';
+    event.preventDefault();
+};
+
+function closeConfirmInvite() {
+    document.querySelector('#confirm-invite-modal').style.display = 'none';
 };
 
 function updateCarousel() {
@@ -141,15 +150,21 @@ function copyToClipboard(text) {
 };
 
 function init(){
-    document.getElementById('pix-modal').addEventListener('click', function(e) {
+    document.querySelector('#pix-modal').addEventListener('click', function(e) {
         if (e.target === this) {
             closePix();
         }
     });
-    
-    document.getElementById('carousel-modal').addEventListener('click', function(e) {
+
+    document.querySelector('#carousel-modal').addEventListener('click', function(e) {
         if (e.target === this) {
             closeCarousel();
+        }
+    });
+    
+    document.querySelector('#confirm-invite-modal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeConfirmInvite();
         }
     });
 
