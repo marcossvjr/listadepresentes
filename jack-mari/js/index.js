@@ -29,13 +29,11 @@ function showPix({giftName, value, qrCodeImageUrl, textCopyPaste }) {
     document.querySelector('#pix-modal').style.display = 'flex';
     document.querySelector('#qrcode-pix').src = qrCodeImageUrl;
     document.querySelector('#span-copy-pix').innerText = textCopyPaste;
-    document.querySelector('.btn-pay-pix').href = 'pix://jack.mello.cursos@gmail.com?amount=' + value + '&description=' + giftName;
 };
 
 function closePix() {
     chavePix = null;
     document.querySelector('#pix-modal').style.display = 'none';
-    document.querySelector('.btn-pay-pix').href = '';
 };
 
 function copyPix() {
